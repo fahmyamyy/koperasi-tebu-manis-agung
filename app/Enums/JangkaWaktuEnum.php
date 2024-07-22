@@ -31,7 +31,7 @@ enum JangkaWaktuEnum: string
         return match (true) {
             $waktu < 5 => self::A,
             $waktu >= 5 && $waktu <= 8 => self::B,
-            $waktu > 12 => self::C,
+            $waktu > 8 => self::C,
             default => null,
         };
     }
