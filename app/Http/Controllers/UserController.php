@@ -78,8 +78,8 @@ class UserController extends Controller
             $user->name = $request->name;
             $user->tempat_lahir = $request->tempatLahir;
             $user->agama = $request->agama;
-            $user->status_keanggotaan = $request->status_keanggotaan;
-            $user->status_perkawinan = $request->status_perkawinan;
+            $user->status_keanggotaan = $request->statusKeanggotaan;
+            $user->status_perkawinan = $request->statusPerkawinan;
 
             if ($user->tanggal_lahir != $request->tanggalLahir) {
                 $user->tanggal_lahir = $request->tanggalLahir;
